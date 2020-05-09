@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">`
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +7,56 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <header class="header">
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--homepage" href="index.html">Strona glowna</a>  
+            <a class="navigation__link"href="nauka-html.html">Nauka html</a>  
+            <a class="navigation__link" href="index-css.html">Nauka css</a>  
+        </nav>
+    </header>
 
-        <header>
-            <h1>Michal Blarzejczyk - strona glowna proba dodania commita</h1>
+    <main>
+        <header id="top">
+            <h1 class="main-heading main-heading--js" id="name">
+                Michal Blazejczyk - strona glowna proba dodania commita
+            </h1>
         </header> 
 
         <section>
-            <h2>Kim jestem?</h2>
-                Lorem ipsum dolor sit amet consectetur,            adipisicing elit. Est quos nulla doloribus odit voluptates libero dolores blanditiis modi laborum, hic laudantium illo, possimus nihil quaerat incidunt esse tempore sunt cumque.   
+            <h2 class="secondary-heading">Kim jestem?</h2>
+            <img src="foto.jpg" alt="poprostu Michael"/>   
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, <em>adipisicing</em> elit. Est quos nulla doloribus odit <i>voluptates</i> libero dolores blanditiis modi laborum, hic laudantium illo, possimus nihil quaerat incidunt <a href="contenfronend.pl"></a>esse tempore sunt cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis voluptates in <b>repudiandae natus</b> velit magni tempore, enim ab assumenda cum <a href="#notatki">przejdz do notatek</a> debitis sit quam veniam aliquid!  
+                </p>    
         </section>
 
-        <section>
-            <h2>Notatki z WTF</h2>
-            <article>
-                Lorem ipsum dolor sit amet consectetur,            adipisicing elit. Perspiciatis cum placeat totam                    voluptatibus provident similique ex illum vel iusto reprehenderit optio quia voluptatum excepturi assumenda laboriosam, cupiditate. 
+        <section id ="notatki">
+            <h2 class="secondary-heading">Notatki z WTF</h2>
+
+            <article class="week-summary week-summary--special">
+                <h3 class="week-summary__title">Odrabianie pracy domowej</h3> 
+                <p class="week-summary__description">Podzło mi calkiem spoko</p>
             </article>  
-            <article>
-                <h3>Czy nagrywanie szkolenia</h3>
-                Lorem ipsum dolor sit amet consectetur,            adipisicing elit. Perspiciatis cum placeat totam                    voluptatibus provident similique ex illum vel iusto reprehenderit optio quia voluptatum excepturi assumenda laboriosam, cupiditate. 
+
+            <article class="week-summary">
+                <h3 class="week-summary__title">Jak stworzyć poprawnie HTML-a</h3>
+                <p class="week-summary__description">
+                    <strong>Lorem ipsum dolor sit amet consectetur</strong>, adipisicing elit. Perspiciatis cum placeat totam voluptatibus provident similique ex illum vel iusto reprehenderit optio quia voluptatum excepturi assumenda laboriosam, cupiditate.
+                </p>
+            </article>  
+
+            <article class="week-summary">
+                <h3 class="week-summary__title">Czy nagrywanie szkolenia</h3>
+                <p class="week-summary__description">
+                    Lorem ipsum dolor sit amet consectetur,            adipisicing elit. Perspiciatis cum placeat totam                    voluptatibus provident similique ex illum vel iusto reprehenderit optio quia voluptatum excepturi assumenda laboriosam, cupiditate. 
+                </p>
             </article>     
         </section>
-        <fotter>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, minus!
-        </fotter>
     </main>
+        <fotter>
+            Strona domowa Micheal-a wszystkie treści sa efektem tworzenia szkolenia WTF: Co ten Frontend!!!<a href="#top">wróć na góre strony</a>
+        </fotter>
+    
     <script src="main.js"></script>
 </body>
 </html>
