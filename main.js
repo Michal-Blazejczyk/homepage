@@ -8,9 +8,11 @@ console.log(
     'Witaj Drogi Odwiedzjacy, nazywam sie ${firstname} i mam ${age} lata'
     );
 
-const heading = document.querySelector('.main-heading--js');
+const heading = document.querySelector('.main__heading--js');
 
 console.log(heading.innerHTML)
 
 heading.innerHtml = `Witaj Drogi Odwiedzjacy, nazywam sie ${firstname} i mam ${age} lata`
-console.log(heading)
+
+const emptyParagraph = document.querySelector('.week-summary__description--js');
+emptyParagraph.innerHTML = `Nawet uzupelnilem java script`

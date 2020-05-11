@@ -15,27 +15,28 @@
         </nav>
     </header>
 
-    <main>
-        <header id="top">
-            <h1 class="main-heading main-heading--js" id="name">
+    <main class="main">
+        <header class="main__header" id="top">
+            <h1 class="main__heading main__heading--js" id="name">
                 Michal Blazejczyk - strona glowna proba dodania commita
             </h1>
         </header> 
 
-        <section>
-            <h2 class="secondary-heading">Kim jestem?</h2>
-            <img src="foto.jpg" alt="poprostu Michael"/>   
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, <em>adipisicing</em> elit. Est quos nulla doloribus odit <i>voluptates</i> libero dolores blanditiis modi laborum, hic laudantium illo, possimus nihil quaerat incidunt <a href="contenfronend.pl"></a>esse tempore sunt cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis voluptates in <b>repudiandae natus</b> velit magni tempore, enim ab assumenda cum <a href="#notatki">przejdz do notatek</a> debitis sit quam veniam aliquid!  
+        <section class="about">
+            <h2 class="about__heading">Kim jestem?</h2>
+            <img class="about__picture" src="foto.jpg" alt="poprostu Michael"/>   
+                <p class="about__description">
+                    Lorem ipsum dolor sit amet consectetur, <em>adipisicing</em> elit. Est quos nulla doloribus odit <i>voluptates</i> libero dolores blanditiis modi laborum, hic laudantium illo, possimus nihil quaerat incidunt <a class="about__link" href="contenfronend.pl"></a>esse tempore sunt cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis voluptates in <b>repudiandae natus</b> velit magni tempore, enim ab assumenda cum <a class="about__link" href="#notatki">przejdz do notatek</a> debitis sit quam veniam aliquid!  
                 </p>    
         </section>
 
-        <section id ="notatki">
-            <h2 class="secondary-heading">Notatki z WTF</h2>
+        <section class="notes" id ="notatki">
+            <h2 class="notes__heading">Notatki z WTF: Co ten frontend</h2>
 
             <article class="week-summary week-summary--special">
                 <h3 class="week-summary__title">Odrabianie pracy domowej</h3> 
-                <p class="week-summary__description">Podzło mi calkiem spoko</p>
+                <p class="week-summary__description">Poszło mi calkiem spoko</p>
+                <p class="week-summary__description week-summary__description--js"></p>
             </article>  
 
             <article class="week-summary">
@@ -53,9 +54,9 @@
             </article>     
         </section>
     </main>
-        <fotter>
-            Strona domowa Micheal-a wszystkie treści sa efektem tworzenia szkolenia WTF: Co ten Frontend!!!<a href="#top">wróć na góre strony</a>
-        </fotter>
+        <footer class="footer">
+            Strona domowa Micheal-a wszystkie treści sa efektem tworzenia szkolenia WTF: Co ten Frontend!!!<a class= "footer__link" href="#top">wróć na góre strony</a>
+        </footer>
     
     <script src="main.js"></script>
 </body>
