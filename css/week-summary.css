@@ -1,0 +1,41 @@
+.week-summary {
+  padding: 16px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  background: #ffffff;
+}
+
+.week-summary--special {
+  border: 1px solid  #92140c;
+}
+
+.week-summary__description {
+  color: #92140c;
+}
+
+.week-summary__title {
+  color: #21a179;
+}
+
+.week-summary__title::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+.week-summary__title::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+.week-summary__title:first-child {
+  background-color: yellow;
+}
+/*# sourceMappingURL=week-summary.css.map */

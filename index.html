@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <nav class="navigation">
+        <nav class="navigation navigation--js">
             <a class="navigation__link navigation__link--homepage" href="index.html">Strona glowna</a>  
             <a class="navigation__link"href="nauka-html.html">Nauka html</a>  
             <a class="navigation__link" href="index-css.html">Nauka css</a>  
+            <a class="navigation__link"href="nauka-html.html">Nauka html</a>  
+            <a class="navigation__link" href="index-css.html">Nauka css</a>  
         </nav>
+        <button class="hamburger hamburger--js" aria-label="Otwórz nemu">nemu</button>
     </header>
 
     <main class="main">
@@ -20,10 +24,12 @@
             <h1 class="main__heading main__heading--js" id="name">
                 Michal Blazejczyk - strona glowna proba dodania commita
             </h1>
+            <button class="acton--js">Zmień naglówek</button>
         </header> 
 
         <section class="about">
             <h2 class="about__heading">Kim jestem?</h2>
+            <div class="test">Witam Cię serdecznie</div>
             <img class="about__picture" src="foto.jpg" alt="poprostu Michael"/>   
                 <p class="about__description">
                     Lorem ipsum dolor sit amet consectetur, <em>adipisicing</em> elit. Est quos nulla doloribus odit <i>voluptates</i> libero dolores blanditiis modi laborum, hic laudantium illo, possimus nihil quaerat incidunt <a class="about__link" href="contenfronend.pl"></a>esse tempore sunt cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis voluptates in <b>repudiandae natus</b> velit magni tempore, enim ab assumenda cum <a class="about__link" href="#notatki">przejdz do notatek</a> debitis sit quam veniam aliquid!  
@@ -32,18 +38,87 @@
 
         <section class="notes" id ="notatki">
             <h2 class="notes__heading">Notatki z WTF: Co ten frontend</h2>
-
-            <article class="week-summary week-summary--special">
-                <h3 class="week-summary__title">Odrabianie pracy domowej</h3> 
+        <div class="grid">
+            <article class="week-summary">
+                <h3 class="week-summary__title week-summary__title--js">Odrabianie pracy domowej</h3> 
+                <p class="week-summary__description">Poszło mi calkiem spoko</p>
+                <p class="week-summary__description week-summary__description--js"></p>
+            </article>  
+            <article class="week-summary">
+                <h3 class="week-summary__title week-summary__title--js">Odrabianie pracy domowej</h3> 
+                <p class="week-summary__description">Poszło mi calkiem spoko</p>
+                <p class="week-summary__description week-summary__description--js"></p>
+            </article>  
+            <article class="week-summary">
+                <h3 class="week-summary__title week-summary__title--js">Odrabianie pracy domowej</h3> 
+                <p class="week-summary__description">Poszło mi calkiem spoko</p>
+                <p class="week-summary__description week-summary__description--js"></p>
+            </article>  
+            <article class="week-summary">
+                <h3 class="week-summary__title week-summary__title--js">Odrabianie pracy domowej</h3> 
                 <p class="week-summary__description">Poszło mi calkiem spoko</p>
                 <p class="week-summary__description week-summary__description--js"></p>
             </article>  
 
-            <article class="week-summary">
-                <h3 class="week-summary__title">Jak stworzyć poprawnie HTML-a</h3>
+            <article class="week-summary week-summary--special">
+                <h3 class="week-summary__title ">Jak stworzyć poprawnie HTML-a</h3>
                 <p class="week-summary__description">
                     <strong>Lorem ipsum dolor sit amet consectetur</strong>, adipisicing elit. Perspiciatis cum placeat totam voluptatibus provident similique ex illum vel iusto reprehenderit optio quia voluptatum excepturi assumenda laboriosam, cupiditate.
                 </p>
+                <section>
+                    <h4>Lsita fajnych znacznikow</h4>
+                    <ul class="list">
+                        <li class="list__item">UL</li>
+                        <li class="list__item">OL</li>
+                        <li class="list__item">SECTION
+                            <ol>
+                                <li>Przeanalizuj tekst</li>
+                                <li>Podziel ja na sekcje</li>
+                                <li>Utworz pierwsza wersje kodu</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <dl>
+                        <dt>div</dt>
+                        <dd>Opis mojego diva</dd>
+                        <dt>article</dt>
+                        <dd>Opis mojego article</dd>
+                    </dl>
+                </section>
+                <section>
+                    <h4>Lsita fajnych znacznikow</h4>
+                    <ol>
+                        <li>Przeanalizuj tekst</li>
+                        <li>Podziel ja na sekcje</li>
+                        <li>Utworz pierwsza wersje kodu</li>
+                    </ol>
+                </section>
+                <section>
+                    <h4>Rozpiska WTF</h4>
+                    <table class="table">
+                        <caption>Spis odcinkow WTF: co ten fronted</caption>
+                        <thead>
+                            <tr>
+                                <th>lp</th>
+                                <th>tytuł</th>
+                                <th>Czas trwania</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Powitanie</td>
+                                <td>5:45</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor amet ut. Aliquid voluptatum suscipit voluptas excepturi quas, optio, cupiditate doloremque at sit asperiores, esse aliquam accusantium fugiat neque architecto.
+                                Dolore adipisci.</td>
+                                <td>12:45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </article>  
 
             <article class="week-summary">
@@ -51,7 +126,8 @@
                 <p class="week-summary__description">
                     Lorem ipsum dolor sit amet consectetur,            adipisicing elit. Perspiciatis cum placeat totam                    voluptatibus provident similique ex illum vel iusto reprehenderit optio quia voluptatum excepturi assumenda laboriosam, cupiditate. 
                 </p>
-            </article>     
+            </article>
+        </div>     
         </section>
     </main>
         <footer class="footer">
